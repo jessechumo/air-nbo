@@ -1,4 +1,47 @@
-/* Default styles for header */
+/* General Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation for App Logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Header Specific Styles */
 .header {
   background-color: #013d1e;
   color: #fff;
@@ -16,7 +59,7 @@
 
 .logo {
   margin-right: 10px;
-  padding: 0px 0px 4px 10px;
+  padding: 0 0 4px 10px;
   height: 3rem;
 }
 
@@ -36,50 +79,56 @@
   margin-left: 35%;
 }
 
-/* Responsive styles for edge devices such as nest hub*/
-
+/* Responsive Styles for Edge Devices */
 @media (max-width: 1300px) {
   .header {
     padding: 5px;
-    display: flex;
-    align-items: center;
     font-size: small;
     height: 4rem;
-    margin: 0 auto;
-
   }
 }
 
-/* Responsive styles for tablet devices */
+/* Responsive Styles for Tablet Devices */
 @media (max-width: 950px) {
   .header {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center align text */
-    height: auto; /* Allow header to expand based on content */
+    flex-direction: column;
+    text-align: center;
+    height: auto;
     font-size: small;
   }
 
   .logo {
     margin-right: 0;
-    margin-bottom: 10px; /* Add space between logo and title */
+    margin-bottom: 10px;
   }
 
   .title {
     margin: 4px;
   }
 
-  #localetime {
-    margin-left: 0;
-  }
-
+  #localetime,
   #airqo {
     margin-left: 0;
   }
 }
 
-/* Responsive styles for mobile devices */
+/* Responsive Styles for Mobile Devices */
 @media (max-width: 576px) {
   .header {
-    height: auto; /* Allow header to expand based on content */
+    height: auto;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 950px) {
+  .sidebar {
+    font-size: medium;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
   }
 }

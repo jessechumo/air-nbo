@@ -1,75 +1,69 @@
- 
+/* Legend Header Styles */
 .legend-header {
-    display: flex; /* Use Flexbox */
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Put space between items */
-    margin-right: 4%;
-  }
-  
-  .legend-header button{
-    border: none;
-    background-color: "#4FCA57";
-    margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 4%;
 }
 
-.legend-title{
-    margin-top: 5%;
+.legend-header button {
+  border: none;
+  background-color: #4FCA57;
+  margin-top: 0;
 }
 
-
-.legend-container{
-   width: 18%;
+/* Legend Title Styles */
+.legend-title {
+  margin-top: 5%;
 }
 
+/* Legend Container Styles */
+.legend-container {
+  width: 18%;
+}
 
-/* Responsive styles for tablet devices */
+/* Responsive Styles for Tablet Devices */
 @media (max-width: 1300px) {
   .legend-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row; /* Set flex-direction to row */
+    flex-direction: row;
     margin: 3%;
-}
-  
-    .legend-title {
-      margin: 0;
-    }
-  
-    .legend-container {
-      margin-right: 0;
-      margin-left: 0%;
-      font-size: medium;
-      width: 40vw;
-      margin-bottom: -1px; /* Add space between logo and title */
-    }
+  }
+
+  .legend-title {
+    margin: 0;
+  }
+
+  .legend-container {
+    margin: 0;
+    font-size: medium;
+    width: 40vw;
+    margin-bottom: -1px;
+  }
 }
 
-/* Responsive styles for mobile devices */
+/* Responsive Styles for Mobile Devices */
 @media (max-width: 576px) {
   .legend-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 4%;
-    flex-direction: row; /* Set flex-direction to row */
+    flex-direction: row;
     margin: 2%;
-}
+  }
 
-    .legend-title{
-        text-align: left;
-        margin: 0%;
-        padding : 0%;
-      }
-  
-    .legend-title {
-      margin: 0;
-    }
-  
-    .legend-container {
-      margin-right: 0;
-      font-size: small;
-      width: 80vw;
-      margin-bottom: 10px; /* Add space between logo and title */
-    }
+  .legend-title {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .legend-container {
+    margin-right: 0;
+    font-size: small;
+    width: 80vw;
+    margin-bottom: 10px;
+  }
 }
